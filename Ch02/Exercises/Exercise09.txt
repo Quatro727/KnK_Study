@@ -1,0 +1,3 @@
+The statement of Exercise08 can be changed for more readable
+
+answer = ( 3 * q - p * p ) / 3 ; 

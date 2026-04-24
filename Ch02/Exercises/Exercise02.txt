@@ -1,0 +1,9 @@
+(a)
+    directives:first of the line
+    statements:line5~8 are the statements
+(b)
+    this program will output the string
+    "Parkinson's Law :
+    Work expands so as to fill the time
+    avaliable for its completion.
+

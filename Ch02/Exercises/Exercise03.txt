@@ -1,0 +1,4 @@
+(1)
+    int height=8,length=12, width=10;
+(2)
+    printf("Dimensional weight (pounds) : %d\n", (volume+165)/166);

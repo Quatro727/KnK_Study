@@ -1,0 +1,3 @@
+option (a) is illegal
+
+In C,the identifier cmust be start with character or _. 

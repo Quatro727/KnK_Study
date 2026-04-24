@@ -1,0 +1,4 @@
+First it's not good for readability and stability of program
+In my opinion, consecutive use of underscore is quite hard to distinguishing form a just single use of underscore. 
+Moreover, when you are debugging your C program, with a very high probability, 
+you will not precisely recognize whether it's one underscore or two underscore

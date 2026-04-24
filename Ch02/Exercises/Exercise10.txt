@@ -1,0 +1,5 @@
+In dweight.c, the spaces must be used are between identifier and type.
+
+int main(void)
+
+int height, length, width, volume, weight;
