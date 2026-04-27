@@ -1,0 +1,4 @@
+(a) "    86,1040" will be ouput.
+(b) " 3.02530e+01" will be ouput.
+(c)  "83.1620" will be output.
+(d)  "1e-06 " will be output.

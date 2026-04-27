@@ -1,0 +1,17 @@
+<addfrac.c>
+~~~
+printf("Enter first fraction: ");
+scanf("%d/%d", &num1, &denom1);
+
+printf("Enter second fraction: ");
+scanf("%d/%d", &num2, &denom2);
+
+~~
+
+<addfrac_with_space.c>
+~~
+printf("Enter first fraction: ");
+scanf("%d /%d", &num1, &denom1);
+
+printf("Enter second fraction: ");
+scanf("%d /%d", &num2, &denom2);

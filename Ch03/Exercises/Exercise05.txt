@@ -1,0 +1,10 @@
+x, y -> float variables
+i -> int type variable
+
+format string of scanf -> "%f%d%f", &x, &y, &i
+
+user's input: 12.3 45.6 789
+
+12.3 will be allocated to variable x
+45 will be allocated to variable y
+0.6 will be allocated to variable i

@@ -1,0 +1,9 @@
+(a) equivalent
+(b) not equivalent
+    In the former format string, when user input string like "1 -2 -3", following the format of latter,
+    the former scanf will terminate the reading. Because when scanf meet the space, it doesn't match with
+    letter '-' so they terminate/
+(c) not equivalent
+    In the latter format string, the last space mean they can be a white-space-characters after float type of value. And scanf will skip the all whit-space-characters until they meet non-white-space characters.
+(d) not equivalent
+    same reason of option (b)
