@@ -1,0 +1,7 @@
+The prefix-increment version '++i' is same as 'i+=1'.
+
+In the expression 'i+=1', first evaulte the expression 'i+1' and then as a side effect the value of i is increased.
+
+In the expression '++i', exactly the same procedure of 'i += 1' is performed.
+
+In the expressin 'i++', first evaluate the value of 'i' and then the value of 'i' is increased after the statement is performed.

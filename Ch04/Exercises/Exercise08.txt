@@ -1,0 +1,2 @@
+Yes that algorithm will be work. 
+In formula ,(10-(total%10))%10, it can represnt all digit under the number 10.

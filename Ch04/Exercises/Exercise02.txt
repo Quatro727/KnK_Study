@@ -1,0 +1,1 @@
+Base on C99, the result is same. In C99, the result of operator '/' will be truncated toward zero

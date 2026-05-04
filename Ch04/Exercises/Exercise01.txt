@@ -1,0 +1,4 @@
+(a) output: 1 2
+(b) output: 0
+(c) output: 1
+(d) output: 0

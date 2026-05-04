@@ -1,0 +1,2 @@
+The latter algorithm doesn't work.
+Because in latter one, when the remainder is divided by 10, if the remainder is 0 after divided by 10, the result of subtracting form 10 will be 10. And it can be represented the number 10.
