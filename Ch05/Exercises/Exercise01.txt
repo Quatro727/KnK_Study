@@ -1,0 +1,9 @@
+#Exercise01
+(a) k = i * j == 6 -> k = ( ( i * j ) == 6 )
+    k=1
+(b) k > i < j -> ( ( k > i ) < j )
+    output: 1
+(c) i < j == j < k -> ( i < j ) == ( j < k )
+    output: 1
+(d) i % j + i < k -> ( ( i % j ) + i ) < k
+    output: o

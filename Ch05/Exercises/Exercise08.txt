@@ -1,0 +1,3 @@
+The entire statements cand be condense like this
+
+( age >= 13 ) ? ( ( age <=19 ) ? teenager = true : teenager = false ) : teenager = false

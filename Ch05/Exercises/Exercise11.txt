@@ -1,0 +1,24 @@
+switch ( area_code ) {
+    case 229: 
+        printf("Albany\n");
+        break;
+    case 404:
+        printf("Atlanta\n");
+        break;
+    case 229:
+    case 470:
+    case 678
+    case 770:
+        printf("Atlanta\n");
+        break;
+    case 478:
+        printf("Macon");
+        break;
+    case 706:
+    case 762:
+        printf("COlumbus\n");
+        break;
+    case 229:
+        printf("Savannah\n");
+        break;
+}

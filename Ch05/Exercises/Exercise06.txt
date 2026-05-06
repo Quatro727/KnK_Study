@@ -1,0 +1,11 @@
+#Exercise06
+
+First we need to check the conditional expression in if parentheses.
+
+The conditional expression will be dealt with following order
+
+1. evaluate the result of 1-10
+2. Evaluate the expressin ( n == ( 1- 10 ) )
+
+ Evaluatring' Inner expression in if condition wilL be 5.
+ So final conditional expression will e like this.

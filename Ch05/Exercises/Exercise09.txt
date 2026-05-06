@@ -1,0 +1,2 @@
+The two group of if statements will act logically same.
+So we cna say these two groups of if statements are equivalent.

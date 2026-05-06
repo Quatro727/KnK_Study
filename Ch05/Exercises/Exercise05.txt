@@ -1,0 +1,13 @@
+#Exercise05
+
+It is legal in perspective of C grammers, but the output result will not what we expected.
+the expression in parentheses will be evaluated in this order
+
+1. n >= 1?
+2. ( n >= 1 ) <= 10
+
+When the variable n is equal to 0., the expression in inner ( n >= 1 ) will be evaluaed to 1.
+And then expression ( n >= 1 ) <= 10 will be evaluated as 1
+
+So the expression's result become 1 so the condition become 1, the true.
+Thus, the message 'n is between 1 and 10' will be displayed

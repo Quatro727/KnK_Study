@@ -1,0 +1,28 @@
+#Exercise03
+
+(a) i < j || ++j < k 
+    when evaluating the value of 'i < j', the result will be 1
+    
+    output: 1
+            3 4 5
+
+(b) i  - 7 && j++ < k -> ( i < j ) && ( j++ < k )
+    when evaluating the value of expression 'i < j', the result will be 0
+
+    output: 0
+            7 8 9
+
+(c) ( i = j ) || ( j = k )
+    when evaluating the value of expression 'i = j', the result will be 1
+
+    output: 1
+            7 8 9
+(d) ++i || ++j && ++k -> ( ( ++i || ++j ) && ++k
+    when evaluating the value of expression '++i', the result will be 1.
+    So the expression the value of expression of '++i || ++j' will be 1
+
+    And then, evaluating the result of '++k', the resulting value will be 2. 
+    So the final value of expression will be 1.
+
+    output: 1
+            2 1 2

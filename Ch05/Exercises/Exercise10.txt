@@ -1,0 +1,7 @@
+The output of the statements will be 
+    
+    one
+    two
+
+Because there are no break statement in the case labels.
+So the control will be flow down after the execution of first matching case label.
