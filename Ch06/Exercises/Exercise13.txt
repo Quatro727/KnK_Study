@@ -1,0 +1,3 @@
+We can make the body of loop in following loop like this
+
+for (n= 0; m > 0; n++, m /= 2);

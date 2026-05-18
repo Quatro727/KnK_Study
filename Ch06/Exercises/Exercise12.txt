@@ -1,0 +1,8 @@
+The prime-testing loop in Sec 6.4 can be modified to get more efficency.
+
+for (d = 2; (d * d) <= n; d++){
+    if (n % d == 0)
+        break;
+}
+
+

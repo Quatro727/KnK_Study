@@ -1,0 +1,7 @@
+The for loop of Exercise 08 can be translated equivalently into wile statement like this
+
+i = 10;
+while (i >= 1){
+    printf("%d ", i++);
+    i /= 2;
+}

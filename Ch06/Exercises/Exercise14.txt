@@ -1,0 +1,4 @@
+Following statement of Exercise14 has error that there is no conversion specifier in the printf' format string/
+We can correct this error like this
+
+if (n% 2 == 0) printf("The %d is even\n", n);

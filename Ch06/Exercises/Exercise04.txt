@@ -1,0 +1,7 @@
+The option (c) is different form the other options ((a) and (b));
+
+Because when you call printf to print the value in the for statement,
+and when evaluating the expression 'i++ < 10', the value of variable i will be evaluated as 0.
+But after the evaluating, the value of i will be changed to 1.
+
+So when the for statement of option (c) is executed, the loop will executed jst 9 times, while the for staement of option (a) and (b) will executed 10 times. 

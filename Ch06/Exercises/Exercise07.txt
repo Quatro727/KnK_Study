@@ -1,0 +1,4 @@
+The do-while loop of Exercise 02 can be translated to the for statement like this
+for (i = 9384;i > 0;i /= 10){
+    printf("%d ", i);
+}

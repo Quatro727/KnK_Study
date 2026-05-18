@@ -1,0 +1,12 @@
+The option (c) is different from the other 2 options.
+
+Let's assume that the lop body is 
+
+printf("%d ", i);
+i++;
+
+the option (a) and the option (b) will evaluated the conditional expression first before executing the loop body.
+But when it comes to the option (c), the do-while statement, this statement execute the loop body first and then 
+evaluate the conditional expression.
+
+
