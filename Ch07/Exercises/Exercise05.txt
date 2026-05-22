@@ -1,0 +1,2 @@
+option (b) '0b1000001' is not legal way to write the number 65 in C.
+In C, the integer constants can only be wriiten in 3ways, decimal, ocatal, hexadecimal.

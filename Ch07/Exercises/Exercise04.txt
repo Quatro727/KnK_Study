@@ -1,0 +1,4 @@
+variable c -> char type variable
+
+option (d) is not legal in C
+when using printf, we must use format string like 'printf("%c", c);"

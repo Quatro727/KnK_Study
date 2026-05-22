@@ -1,0 +1,6 @@
+Days in month = 31
+Days in a year = 356
+Minutes in a day = 60x24 = 1440
+Seconds in a day = 1440x60 = 8640
+
+the short type is the smallest type that guaranteed to be large enough to store the item

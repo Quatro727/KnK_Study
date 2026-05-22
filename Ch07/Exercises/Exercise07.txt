@@ -1,0 +1,7 @@
+(a) the '\b' can be converted to '\10'
+
+(b) the '\n' can be converted to '\12'
+
+(c) the '\r' can be converted to '\15'
+
+(d) the '\t' cna be converted to '\11'

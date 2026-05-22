@@ -1,0 +1,6 @@
+The following character escapes can be converted into equivalent hexadecimal escape
+
+(a) \x08
+(b) \x0a
+(c) \x0d
+(d) \x09

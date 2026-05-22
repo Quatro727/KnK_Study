@@ -1,0 +1,2 @@
+
+option (b) is not legal type in C

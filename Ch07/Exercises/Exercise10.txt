@@ -1,0 +1,8 @@
+the expression i + (int)j *k will have the type unsigned int
+
+1. (int)j * k -> the variable j will have 2 times of conversion
+                 long to int and int to unsigned
+
+2. i + (int) * k -> variable i will converted into unsigned int
+
+

@@ -1,0 +1,6 @@
+the expression 'i * f / j' will have the type double
+
+1. 'i * f'-> the variable i will converted into float
+
+2. 'i * f / d'-> the result of i * f will converted into double
+

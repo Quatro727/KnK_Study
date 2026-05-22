@@ -1,0 +1,9 @@
+(a) 010E2 has the letter 'E', so this constant is floating type
+
+(b) 32.1E5 has decimal point and letter 'E', so this constant is floating type
+
+(c) 0790 has 0 before the number 790, so this constant is integer type and it's represented as octal
+
+(d)100_0000 this kind of representation of constant is illegal in C
+
+(e) 3.978e-2 has decimal point and the letter 'e', so this constant is floating type

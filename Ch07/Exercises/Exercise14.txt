@@ -1,0 +1,5 @@
+Unfortunately, following expression don't compute correctly occasionally.
+
+When it comes to casting, let's assume that the variable f is carrying the value that cannot be stored in int type.
+
+In this case, the following expression cannot be computed correctly, because while casting, there must be error.

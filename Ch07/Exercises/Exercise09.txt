@@ -1,0 +1,9 @@
+variable i and j 0->both are int type
+
+the expression
+i/j + 'a'
+
+first i/j will have int type
+and the letter 'a' is char type which means it will trests as integer type
+
+so the expression will have int type
