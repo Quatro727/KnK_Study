@@ -1,0 +1,4 @@
+Using 'sizeof(a) / sizeof(t)' instead of 'sizeof(a) / sizeof(a[i])'  can cause a portable problem.
+Because in C, the size of type can be different by machine.
+
+For example, old machine treat the 'int' type as 16-bit, on the other hand, another machine can treat 'int' type as 32-bit. In this case, there would be aproblem

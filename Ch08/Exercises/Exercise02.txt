@@ -1,0 +1,7 @@
+In C, the subscript start with 0 and end with n-1.(assuming that the length of array is n).
+
+In C, characters are treated as a integer.
+
+So we can use character as a subscript by manipulating a little.
+
+As I mentioned, array is started with C. And ,in ASCII code, the letter 'a' is same as digit 97. If we want to use the letter 'a' as the start of the array, we may use the expression ''a' - 97' as a array's subscript.
