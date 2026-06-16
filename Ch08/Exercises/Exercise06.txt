@@ -1,0 +1,16 @@
+To set up an array that remembers which segments should be "on" for each digit,
+you canc set up array like this
+
+
+0 -> {1, 1, 1, 1, 1, 1, 0}
+1 -> {0, 1, 1, 0, 0, 0, 0}
+2 -> {1, 1, 0, 1, 1, 0, 1}
+3 -> {1, 1, 1, 1, 0, 0, 1}
+4 -> {0, 1, 1, 0, 0, 1, 1}
+5 -> {1, 0, 1, 1, 0, 1, 1}
+6 -> {1, 0, 1, 1, 1, 1, 1}
+7 -> {1, 1, 1, 0, 0, 0, 0}
+8 -> {1, 1, 1, 1, 1, 1, 1}
+9 -> {1, 1, 1, 1, 0, 1, 1}
+
+you can store this each array in 2-dimensional array 'const int segments[10][7]'.

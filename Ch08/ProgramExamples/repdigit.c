@@ -1,3 +1,4 @@
+//Check whether any of the digits in a number appear more than once
 #include <stdio.h>
 #include <stdbool.h>
 
