@@ -1,0 +1,35 @@
+Requirement:
+    - write a function digit(n, k)
+    -returns k^th digit in n
+    - if k is greater than the number of digits in n, return 0
+
+Solution:
+    
+    int digit(int n, int k){
+        int cnt = 1;
+        int result;
+
+        for (int i = 10; i <= n; i *= 10){
+            if (n / i >= 1) cnt++;
+        }
+
+        if (cnt < k) return 0;
+
+        for (int i = 1; i < k; i++){
+            n = n / 10;
+        }
+        
+        return n % 10;
+    }
+
+Better Solution:
+
+    int digit(int n, int k){
+        for (int i = 1; i < k; i++){
+            n /= 10;
+        }
+
+        if (n == 0) return 0;
+
+        return n % 10;
+    }

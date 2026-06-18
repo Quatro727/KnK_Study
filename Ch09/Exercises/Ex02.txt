@@ -1,0 +1,16 @@
+Requirements:
+    1. returns 1 if both x and y fall between 0 and n - 1
+    2. returns 0 otherwise
+    3. x,y and n have the integer type.
+
+Solution:
+    int check(int x, int y, int n){
+        int check_x, check_y;
+
+        if (x > 0 && x < n - 1) check_x = 1;
+        if (y > 0 && y < n - 1) check_y = 1;
+
+        if(check_x == 1 && check_y == 1) return 1;
+        else return 0;
+    }
+

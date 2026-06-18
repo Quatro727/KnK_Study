@@ -1,0 +1,19 @@
+Requirement:
+    - parameter day, month, year
+    -return day of the year, which has the int type
+
+Solutions:
+
+    int day_of_year(int day, int month, int year){
+        int results = 0;
+
+        for (int i = 1; i <= month; i++){
+            if (i == month) results += day;
+            else if (i == 2) results += 28;
+            else if (i <= 7 && i % 2 == 1) results += 31;
+            else if (i >= 8 && i % 2 == 0) results += 31;
+            else results += 30;
+        }
+        return results;
+    }
+

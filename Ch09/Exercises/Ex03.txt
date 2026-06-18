@@ -1,0 +1,41 @@
+Requirements:
+    1. write a gcd(m, n)
+    2. calculates a gcd of m and n(both are int)
+
+Solutions:
+
+    int gcd(m, n){
+        int divisor, dividend;
+        int remainder = 1;
+
+        if (m > n){
+            dividend = m;
+            divisor = n;
+        }
+        else{
+            dividend = n;
+            divisor = m;
+        }
+
+        while (remainder != 0){
+            remainder = dividend % divisor;
+            dividend = divisor;
+            divisor = remainder;
+        }
+
+        return dividend;
+    }
+
+Better solution:
+    
+    int gcd(m, n){
+        int remainder;
+
+        while (remainder != 0){
+            remainder = m % n;
+            m = n;
+            n = remainder;
+        }
+
+        return m;
+    }

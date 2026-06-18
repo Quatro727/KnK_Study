@@ -1,0 +1,29 @@
+double triangle_area(double base, height)
+double product;
+{
+    product = base * height;
+    return product / 2;
+}
+
+First of all, in the function declaration, we can't specify the type of parameter separately.
+So we have to fix it like 
+    double triangle_area(double base, height)...
+
+Second, the variable product must declared in the function when you want to use the variable product.
+In code, the variable is declared outside. So we can fix it like
+       
+{
+    double product;
+
+    product = base * height;
+    return product / 2;
+}
+
+Result:
+double triangle_area(double base, double height){
+    double product;
+
+    product = base * height;
+
+    return product / 2;
+}

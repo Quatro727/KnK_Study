@@ -1,0 +1,39 @@
+Requirements:
+	-return following values
+		(a) largest element in a
+		(b) average of all elements in a
+		(c) the number of positive elements in a
+
+Solution:
+
+(a)
+	int max(int a[], int n){
+		int largest = a[0];
+		
+		for (int i = 0; i < n; i++){
+			if (largest < a[i]) largest = a[i];
+		}
+		return largest;
+	}
+(b)
+	double avg(int a[], int n){
+		double total = 0.0;
+		
+		for (int i = 0; i < n; i++){
+			total += a[i];
+		}
+		return total / n;
+	}
+(c)
+	int cnt_positive(int a[], int n){
+		int cnt = 0;
+		
+		for(int i = 0; i < n; i++){
+			if (a[i] > 0) cnt++;
+		}
+		return cnt;
+	}
+			
+					 
+
+	

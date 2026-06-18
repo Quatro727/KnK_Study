@@ -1,0 +1,17 @@
+Requirements:
+    - function that returns the number of digits in n
+
+Solution:
+    
+    int num_digits(int n){
+        int cnt = 0;
+
+        for(;;){
+            if (n == 0) break;
+
+            n /= 10;
+            cnt++;
+        }
+
+        return cnt;
+    }

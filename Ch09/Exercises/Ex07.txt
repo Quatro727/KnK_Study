@@ -1,0 +1,6 @@
+When u call the f(int a, int b) according to definition of function f,
+the option (a) is the most proper form. 
+
+Also, the option (b) is legal format. According to C's type conversion rules, int return value can be converted inplicitly into a double type.
+
+However when calling a function, it is highly recommended to match the return type of function and type of parameter explicitly for better code clarity.

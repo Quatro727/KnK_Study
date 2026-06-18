@@ -1,0 +1,35 @@
+Requirements:
+	-function 'float compute_GPA(char grades[], int n)'
+	- return average of grades
+	- the element of grades[] is one of character A, B, C, D, F
+	- Each letter's grade: A=4, B=3, C=2, D=1 and F=0
+Solution:
+	float compute_GPA(char grades[], int n){
+		int initializer = 4;
+		float total = 0.0f;
+	
+		for (int i = 0; i < n; i++){
+			switch (grades[i]) {
+				case 'A': 
+					total += 4.0f
+					break;
+				case 'B':
+					total += 3.0f;
+					break;
+				case 'C':
+					total += 2.0f;
+					break;
+				case 'D':
+					total += 1.0f;
+					break;
+				case 'F': 
+					total += 0.0f;
+					break;
+				default:
+					break;
+			}
+		}
+		return total / (float)n;			
+	}	
+			
+	
