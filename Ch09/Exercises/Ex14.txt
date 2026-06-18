@@ -1,0 +1,29 @@
+bool has_zero(int a[], int n){
+    int i;
+
+    for (i = 0; i < n; i++){
+        if (a[i] == 0) return true;
+        else return false;
+}
+
+This function is supposed to return 0 if there is no 0 value in array a, and return true if there are 0 value in array a.
+
+But this function definition contains error. For loop can't check all element's value in array when there are 0 value.
+
+In the case of array that composed with {1,0,3,4,5} and the length of this array is 5.
+
+First, when return statement is executed, that means function is terminated.
+At the first loop in for statement, it will check the first element's value of array a, a[0], and a[0] has the value 1.
+a[0]'s value isn't matched with the conditional expression in if, so it will go to else statement and return false.
+Even thoug array has 0 value in index 1, according to above function, this function will return false.
+
+
+So we can correct this function like this
+    
+    bool has_zero(int a[], int n){
+        int i;
+        for (i = 0; i < n; i++){
+            if (a[i] == 0) return true;
+        }
+        return false;
+    }

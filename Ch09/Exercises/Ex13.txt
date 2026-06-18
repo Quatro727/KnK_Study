@@ -1,0 +1,49 @@
+Requirements:
+    -function 'int evaluate_position(char board[8][8])'
+    -board represents a configuration of each pieces on a chessboard
+    -return the difference of White sum and Black sum
+
+Solution:
+    int evaluate_position(char board[8][8]){
+        int sum_w = 0;
+        int sum_b = 0;
+
+        for (int i = 0; i< 8; i++){
+            for (int j = 0; j < 8; j++){
+                switch (board[i][j]){
+                    case 'Q':
+                          sum_w += 9;
+                          break;
+                    case 'R':
+                          sum_w += 5;
+                          break;
+                    case 'B':
+                          sum_w += 3;
+                          break;
+                    case 'N':
+                          sum_w += 3;
+                          break;
+                    case 'P':
+                          sum_w += 1;
+                          break;
+                    case 'q':
+                          sum_b += 9;
+                          break;
+                    case 'r':
+                          sum_b += 5;
+                          break;
+                    case 'b':
+                          sum_b += 3;
+                          break;
+                    case 'n':
+                          sum_b += 3;
+                          break;
+                    case 'P':
+                          sum_b += 1;
+                          break;
+                    default: break;
+                }
+            }
+        }
+        return sum_w - sum_b;
+    }

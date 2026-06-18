@@ -1,0 +1,14 @@
+Requirements:
+    -function 'double inner_product(double a[], double b[], int n)
+    -return 'a[0]*b[0] + a[1]*b[1] + ..... + a[n-1]*n[n-1]'
+
+Solution:
+    
+    double inner_product(double a[], double b[], int n){
+        double total = 0.0;    
+        for (int i = 0; i < n; i++){
+            total += a[i] * b[i];
+        }
+        return total;
+    }
+
