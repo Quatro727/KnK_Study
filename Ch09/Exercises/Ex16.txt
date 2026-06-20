@@ -1,0 +1,7 @@
+int fact(int n){
+    //if (n <= 1) return 1;
+    //else return n * fact(n - 1);
+
+    //condense version using conditional expression
+    return fact <= 1 ? 1 : n * fact(n - 1);
+}

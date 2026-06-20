@@ -1,0 +1,11 @@
+We can rewrite the function which has just one return statement like  this:
+
+double median(double x, double y, double z){
+    double median;
+
+    if ((y <= x && x <=z) || (z <=x && x <= y)) median = x;
+    if((x <= y && y <=z) || (z <= y && x >= y)) median = y;
+    median =z;
+
+    return median;
+}

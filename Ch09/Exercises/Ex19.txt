@@ -1,0 +1,1 @@
+This function is change the decimal integer to binary number;
