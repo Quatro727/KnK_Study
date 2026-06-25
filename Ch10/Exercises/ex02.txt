@@ -1,0 +1,7 @@
+(a) variables which are visible in function f are b(external), c, b(local), and d
+
+(b) b(external), c(external), a(parameter), c(local), a(local), d
+
+(c) same as option (b)
+
+(D) b(external), c(external), c(local), d are visible in main function

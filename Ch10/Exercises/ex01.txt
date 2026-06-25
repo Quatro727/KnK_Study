@@ -1,0 +1,7 @@
+(a) variable a, b  and c is visible in fuction f
+
+(b) variable a, d, and e are visible in function g
+
+(c) same variables as option (b)
+
+(d)variable a, f are visible in main function
