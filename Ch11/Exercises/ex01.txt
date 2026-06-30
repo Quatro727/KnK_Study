@@ -1,0 +1,3 @@
+p is pointing the variable 
+
+option '(a) *p' is the alias for i

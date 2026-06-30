@@ -1,0 +1,5 @@
+void split_time(long total_sec, int *hr, int *min, int *sec){
+    total_sec = (*hr) * 3600 + (*min) * 60 + *sec;
+
+    return total_sec;
+}

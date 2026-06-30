@@ -1,0 +1,9 @@
+swap fuction which can exchange the variables by using pointers can be written like this way:
+
+void swap(int *p, int *q){
+    int *tmp;
+
+    tmp = p;
+    p = q;
+    q = tmp;
+}

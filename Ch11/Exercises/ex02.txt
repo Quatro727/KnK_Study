@@ -1,0 +1,8 @@
+i is the int type variable, p and q are pointing i
+
+int i;
+int *p, *q;
+
+p = q = &i;
+
+So option '(f) p =q' is the legtimate in C
