@@ -1,0 +1,42 @@
+int evaluate_position(char *board){
+    int sum_w = 0;
+    int sum_b = 0;
+    char *p;
+
+    for(p = board; p < board + 64; p++){
+        switch(*p){
+            case 'Q':
+                sum_w += 9;
+                break;  
+            case 'R':
+                sum_w += 5;
+                break;  
+            case 'B':
+                sum_w += 3;
+                break;  
+            case 'N':
+                sum_w += 3;
+                break;  
+            case 'P':
+                sum_w += 1;
+                break;  
+            case 'p':
+                sum_b += 1;
+                break;  
+            case 'q':
+                sum_b += 9;
+                break;  
+            case 'r':
+                sum_b += 5;
+                break;  
+            case 'b':
+                sum_b += 3;
+                break;  
+            case 'n':
+                sum_b += 3;
+                break;
+            default: break;
+        }
+        return sum_w - sum_b;
+    }
+

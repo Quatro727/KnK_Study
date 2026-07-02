@@ -1,0 +1,13 @@
+void print_highest(int *a, int n){
+    int *p, i = 0;;
+
+    int largest = find_largest(a[0], 24);
+    
+    for(i = 1;  i < 7; i++){
+        int current_row_max = find_largest(a + (i * 24), 24);
+
+        if(current_row_max > largest) largest = current_row_max;
+    }
+
+    printf("Highest: %d\n", largest);
+}

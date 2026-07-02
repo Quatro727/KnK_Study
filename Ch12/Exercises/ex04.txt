@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#define STACK_SIZE  100
+
+int contents[STACK_SIZE];
+int *top_ptr;
+
+<make_empty>
+void make empty(void){
+   *top_ptr = 0;
+}
+<is_empty>
+bool is_empty(void){
+    return *top_ptr;
+}
+<is_full>
+is_full(void){
+    return (*top_ptr == STAK_SIZE);

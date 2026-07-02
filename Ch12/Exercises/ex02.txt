@@ -1,0 +1,5 @@
+the part of 'low + high' is illegal.
+Integers are the only thing when u are trying to add to a pointer variable.
+We can fix this formula in this way
+
+(high - low) / 2 + low = middle

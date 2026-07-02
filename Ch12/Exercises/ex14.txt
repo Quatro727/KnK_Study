@@ -1,0 +1,8 @@
+bool search(const int *a, int n){
+    int i;
+
+    for(i = 0; i < n; i++){
+        if(*(a + i) == 32) return true;
+    }
+    return false;
+}

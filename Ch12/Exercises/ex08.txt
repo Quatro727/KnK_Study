@@ -1,0 +1,5 @@
+void sotre_zeros(int *a, int n){
+    while( a < a + n){
+        *a++ = 0;
+    }
+}

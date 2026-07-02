@@ -1,0 +1,7 @@
+void print_tempartures(int *a, int cols, int i){
+    int *p;
+
+    for(p = a + (i * cols); p < a + (i * cols) + cols; p++){
+        printf("%d ", *p);
+    }
+}

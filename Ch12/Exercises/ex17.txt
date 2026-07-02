@@ -1,0 +1,10 @@
+int sum_two_dimensional_array(const int *a, int n){
+    int sum = 0;
+    int  *p;
+
+    for(p = a; p < a + n; p++){
+        sum += *p;
+    }
+
+    return sum;
+}

@@ -1,0 +1,5 @@
+(a) *(p+3) is the value of a[4], so it's 14
+(b) *(q-3) is the value of a[2], so it's 34
+(c) p-q is the distance between a[1] and a[5], so it's 4
+(d) it's true
+(e) it's false

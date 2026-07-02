@@ -1,0 +1,10 @@
+a: a one-dimensional array
+p: a  pointer variable
+
+ p = a is performed -> the address of a[0] is assigned th the pointer p
+
+ (a) p == a[0] -> false
+ (b) p == &a[0] -> true
+ (c) *p == a[0] -> true
+ (d) p[0] == a[0] -> false
+
