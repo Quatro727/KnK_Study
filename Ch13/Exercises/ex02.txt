@@ -1,0 +1,4 @@
+(b), (c) are legal calls.
+
+putchar() expects argument of a 'char' type.
+put() expects a argument which is a 'char  *' type

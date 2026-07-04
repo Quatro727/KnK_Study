@@ -1,0 +1,7 @@
+First, the %d in scanf will read a input until the first input which is not a int is read.
+
+And then %s will read next input until it encounters white-space.
+
+Finally, %d read the input while input is a int type.
+
+So scanf("%d%s%d", &i, s, &j) will cause that the i will store integer 12, and s will points the first memory of string "abc34" and the j will store the integer 56.

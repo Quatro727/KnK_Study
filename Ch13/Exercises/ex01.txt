@@ -1,0 +1,6 @@
+(a), (c), (e), (i) are incorrect for the same reason.
+
+Because '\n' is not a string literal. The printf, puts, putchar all are expecting a pointer argument not a just variable.
+And compiler will treat it as a just a single charactern not a pointer of string literal.
+
+Also, the option (h) is illegeal. Because putchar() expects a argument which is a 'char' type, not a 'char *' type.
