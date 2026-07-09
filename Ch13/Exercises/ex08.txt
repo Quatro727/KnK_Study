@@ -1,0 +1,2 @@
+After those 3 fuctions are executed, the str will have the string "tired-wired?"
+(If the array isn't long enough to hold, it will cause undefined-behavior.)

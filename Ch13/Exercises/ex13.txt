@@ -1,0 +1,8 @@
+void build_index_url(const char *domain, char *index_url){
+    char str[21] = "http://www.";
+
+    strcpy(index_html, str);
+    strcat(index_html, domain);
+    strcat(index_html, "/index.html");
+
+}

@@ -1,0 +1,12 @@
+strcpy(s1, "computer") -> s1 will have the string "computer\0".
+strcpy(s2, "science") -> s2 will have the string "science\0".
+
+strcmp(s1, s2) -> "computer" is less than "science" accoiding to the order of dictionary, so the return value is negative.
+
+so the body of if statment9(strcat(s1, s2)) is executed.
+
+As a result, the string s1 will be "computerscience\0"
+
+Finally, the statement 's1[strlen(s1) - 6]' is measured to 's1[9] = '\0''
+
+Consequently, the string s1 will have the string "computers\0ience\0".

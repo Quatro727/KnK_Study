@@ -1,0 +1,4 @@
+option (d) is not equivalent to the others.
+
+strcat(str, "") is appends the null characters to the end of the str, while the others
+insert the value at the first character of str.

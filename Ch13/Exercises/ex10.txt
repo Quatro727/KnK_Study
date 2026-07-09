@@ -1,0 +1,10 @@
+At the declaration part of pointer q is incorrect.
+
+In this declaration, it didn't specify the enough space for the duplication and
+this type of declaration is declaring the string literal which means it can't moify theelements pointed by pointer
+
+So we have to declare like this
+
+char q[100];
+
+to enable the copying

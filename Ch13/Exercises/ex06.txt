@@ -1,0 +1,10 @@
+void censor(char *str){
+    while(*str != '\0'){
+        if(*str == 'f' && *(str + 1) == 'o' && *(str + 2) == 'o'){
+            *str = 'x';
+            *(str +1) = 'x';
+            *(str + 2) = 'x';
+        }
+        str++;
+    }
+}

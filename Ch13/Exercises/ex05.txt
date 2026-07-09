@@ -1,0 +1,18 @@
+(a)using array subscripting
+void captialize(char str[]){
+    int i;
+
+    for(i = 0; str[i] != '\0'; i++){
+        if(islower(str[i]) str[i] = toupper(str[i]);
+    }
+}
+
+(b) using pointer arithmetic
+
+void capitalize(char *str){
+    while(*str != '\0'){
+        *str = toupper(*str);
+        str++;
+    } 
+}
+
