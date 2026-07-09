@@ -1,10 +1,12 @@
 At the declaration part of pointer q is incorrect.
 
-In this declaration, it didn't specify the enough space for the duplication and
-this type of declaration is declaring the string literal which means it can't moify theelements pointed by pointer
+In this declaration, since the pointer p hasn't been initialized, we don't know where it's pointing. It could point the memory that prevented by OS. 
 
-So we have to declare like this
+So we have to initialize in this way
 
-char q[100];
+char *duplicate(char *q, const char *p){
+    strcpy(q, p);
+    return q;
+}
 
 to enable the copying
