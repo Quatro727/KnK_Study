@@ -1,0 +1,31 @@
+bool test_extension(const char *file_name, const char *extension){
+    const char *p = file_name;
+    
+    //progress and check the file_name
+    while(*p != '.'){
+        if(*p == '\0') break;
+        p++;
+    }
+    //if filename don't have the extension
+    if(*p == '\0') return 0;
+
+    //if met the '.' character
+    else file_name = p + 1;
+    
+    //checking the each character of extension
+    while(*extension){
+        if(toupper(*file_name) != toupper(*extension)) return 0;
+        
+        extension++;
+        file_name++;
+    }
+    //if filename's extension is longer than the extension
+    if(*file_name) return 0;
+
+    return 1;
+}
+
+    
+
+
+

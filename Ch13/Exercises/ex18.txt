@@ -1,0 +1,14 @@
+void remove_filename(char *url){
+    char *orig = url;//saving the first pointer's value
+
+    while(*url) url++;//progress until null character
+    
+    while(url > orig && *url != '/') url--;//rear moving fomr null to '/' or first character
+
+    if(*url =='/') *url = '\0'//replace '/' to null character
+}
+
+
+
+
+

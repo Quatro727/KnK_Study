@@ -1,0 +1,11 @@
+count_spaces function in Sec 13.4 canb be rewritten in this way
+
+int count_spaces(const char *s){
+    int count = 0;
+    while(*s){
+        if(*s == ' ') count++:
+    }
+    return count;
+}
+
+using while loop instead of for loop.

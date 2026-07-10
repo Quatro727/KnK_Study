@@ -1,0 +1,3 @@
+(a) the value of f("abcd", "babc") is integer 3
+(b) the value of f("abcd", "bcd") is integer 0
+(c) The function f returns the index of the first character in string s that doesn't appear in string t.
