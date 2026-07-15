@@ -1,0 +1,25 @@
+#define GENERIC_MAX(type)        \
+type type##_max(type x, type y)  \
+{                                \
+    return x > y ? x : y;        \
+}
+
+(a) the expansion of GENERIC_MAX(long)
+    long long_max(long x, long y)
+    {
+    return x > y ? x : y;
+    }
+
+(b) Because there must be no space between the name 
+    Let's guess that we use the type unsigned long type as a arguments of macro
+    After the preprocessing, the form will be like this
+
+    unsigned long unsigned long_max(...){....
+
+    As a perspective of compiler, this form has versatility to read.
+
+(c) Just use typedef
+    
+    typedef unsigned long UL;
+
+    And use macro.

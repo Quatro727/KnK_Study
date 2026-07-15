@@ -1,0 +1,26 @@
+- TOUPPER macro definition
+  #define TOUPPER(c) ('a'<=(c)&&(c)<='z'?(c)-'a'+'A':(c))
+
+-variable s is string, variable i is int 
+
+(a) strcpy(s, "abcd");
+    i = 0;
+    putchar(TOUPPER(s[++i]);
+
+    TOUPPER(s[++i])
+  ->'a'<=(s[++i])&&(s[++i])<='z'?(s[++i])-'a'+'A':(s[++i])
+  ->'a'<='b'&&'c'<='z' conditions is true 
+  ->lastly, the expression 'd'-'a'+'A' will be evaluated and the output will be 'D'
+
+  because of evaluating the aruguments more than once the result is unexpected
+
+(b) strcpy(s,"0123");
+    i = 0;
+    putchar(TOUPPER(s[++i]));
+
+    TOUPPER(s[++i])
+  ->'a'<=(s[++i])&&(s[++i])<='z'?(s[++i])-'a'+'A':(s[++i])
+  ->'a'<='1'&&'2'<='z' conditions is false
+  ->laslty, expression  (s[++i]) is evaluated and the result is '3'
+  
+  because of evaluating the aruguments more than once the result is unexpected

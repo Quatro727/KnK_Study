@@ -1,0 +1,5 @@
+(a) #define Cube(x) ((x) * (x) * (x))
+(b) #define Remainder(n) ((n) % 4)
+(c) #define A(x, y) (((x) * (y)) < 100 ? 1: 0)
+
+all macros would walk under the on term, which is the arguments should be numeric type.

@@ -1,0 +1,8 @@
+#define DOUBLE(x) 2*x
+
+(a)the value of DOUBLE(1+2) is 4
+    2*1+2 -> 2 + 2 -> 4
+(b) the value of 4/DOUBLE(2) is 4
+    4 / 2 * 2 -> 2 * 2-> 4
+(c) it can be fixed to '
+    #define DOUBLE(x) (2*(x))

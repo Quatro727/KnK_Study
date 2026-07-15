@@ -97,8 +97,7 @@ bool duplicated_card(int rank, int suit, int hand[5][2], int card_reads){
 
 //analyze_hand
 void analyze_hand(void){
-    int card, rank;
-    int rank_counts[NUM_RANKS] = {0};
+    int card, matches;
 
     straight  = false;
     flush = false;
@@ -136,15 +135,17 @@ void analyze_hand(void){
     }
 
     //check for 4-of-a-knid, 3-of-a kind, and pairs
-    for(card = 0; card < NUM_CARDS; card++){
-        int r = hand[card][0];
-        rank_counts[r]++;
-    }
-
-    for(rank = 0; rank < NUM_RANKS; rank++){
-        if(rank_counts[rank] == 4) four = true;
-        if(rank_counts[rank] == 3) three = true;
-        if(rank_counts[rank] == 2) pairs++;
+    i = 0;
+    while(i < NUM_CARDS){
+        matches = 0;
+        for(j = i + 1; j < NUM_CARDS; j++){
+            if(hand[i][0] == hand[i][0]) matches++;
+        }
+        if(matches == 1) pairs++;
+        if(matches == 2) three = true;
+        if(matches == 3) four = true;
+        
+        i += (matches + 1);
     }
 }
 

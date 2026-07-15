@@ -1,0 +1,25 @@
+(a) #define AVG(x, y) (x+y)/2
+    
+    In this case because of lack of parethesis, it could not work as we desire
+    For example, suppose the macro using in this way in main body of program
+         5 *  AVG(3, 4)
+    Macro only replace the position of macro to definition
+    So after the preprocessing, the form will be 
+         5 * (3 +4) /2
+    We expected the result as 15, but actual result will be 17
+
+    So we can fix it by adding proper parethesis
+    
+    #define AVG(x, y) (((x)+(y))/2)
+
+(b) #define AREA(x, y) (x) * (y)
+
+    Because of the same reason with option (a), this macro will not operate properly
+    For example, suppose the macro
+       16/AREA(2, 4)
+    As a I said, when compiler encounters the macro it just replace it to replacement-list. So it after thje preprocessing, it will has the form like this
+       16/(2)*(4)
+    And the result of this operation is 32, while we expect it as 2.
+    So we have to fix it in same way as we did it in option (a), adding parethesis
+
+    #define AREA(x, y) ((x)*(y))
