@@ -1,0 +1,22 @@
+(a)
+< After preprocessing >
+
+#include <stdio.h>
+
+void f(void);
+
+int main(void)
+{
+    f();
+
+
+    return 0;
+}
+
+void f(void)
+{
+    printf("N is %d\n", 100);
+}
+
+(b) 
+    The output of this program is just the print of string "N is defined 100"

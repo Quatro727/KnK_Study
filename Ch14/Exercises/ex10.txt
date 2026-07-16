@@ -1,0 +1,7 @@
+In my opinion there are two main reasons that function is unsuitable to define as parameterized macro
+
+First, function can be pointed by  pointer. So there is no reason to use macro
+(Because whenever we need it, we can just point it and use)
+
+Secondly, macro doesn't check the type of arguments. But in case of function, type checking must be performed. 
+
