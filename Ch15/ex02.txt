@@ -1,0 +1,2 @@
+Option (b), function definitions should not be put in the header file because of multiple definition.
+When in the step of linking, after compling the two files including the file which has function definition, linker are confused. Which one is proper to use? 

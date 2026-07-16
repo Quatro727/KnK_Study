@@ -1,0 +1,7 @@
+(a)
+    - Readability becomes much better. When u maintain program with one single file, you'll be easily exhausted by only reading. Morevoer, tracing error become much harder.
+    - Collaboration becomes more effective against it. We can easily allocate the tack to each person. 
+
+(b)
+    - Compile can be complicated. When one single program has 500 source files, building a program maually is almost impossible in this case.
+    -Scope management can be quite hard. 

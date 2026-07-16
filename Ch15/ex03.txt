@@ -1,0 +1,8 @@
+When using "filename" instead of <filename>, if file is system header, there ar possibility that compiler could overwrite and mismatch of the osearch order.
+
+Let's assume that we made a file named "stdio.h, which has same name with C's library file <stdio.h>.
+
+And if we get confused by this same name, we might include it using "stdio.h" instead of <stdio.h>. 
+
+While compiling, first it will search the current directory, and include the contents of "stdio.h", not a contents of <stdio.h> which we actally need to include.
+As a result, the program will perform in an unintended way.
