@@ -1,0 +1,8 @@
+(a) 
+   When the program is built for first time, all files need to be compiled.
+(b)
+    If f1.c is modified, f1.c needs to be recompiled.
+(c)
+    If f1.h is modified, f1.c, main.c and f2.c have to be recompiled.
+(d)
+    If f2.h is modified, f1.c and f2.c have to be recompiled.

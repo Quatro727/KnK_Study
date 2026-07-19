@@ -1,0 +1,51 @@
+<debug.h>
+#ifdef DEBUG
+#define PRINT_DEBUG(n) printf("Value of " #n ": %d\n", n);
+#else
+#define PRINT_DEBUG(n)
+#endif
+
+<testdebug.c>
+#include <stdio.h>
+
+#define DEBUG
+#include "debug.h"
+
+int main(void){
+    int i = 1, j = 2,  k =3;
+
+    #ifdef DEBUG
+     printf("Output if DEBUG is defined:\n");
+    #else
+     printf("Output if DEBUG is not defined:\n");
+    #endif
+    
+    PRINT_DEBUG(i);
+    PRINT_DEBUG(j);
+    PRINT_DEBUG(k);
+    PRINT_DEBUG(i + j);
+    PRINT_DEBUG(2 * i + j - k);
+    
+    return 0;
+}
+
+(a) the output of this program when it's executed will be
+
+Output if DEBUG is defined:
+Value of i: 1
+Value of j: 2
+Value of k: 3
+Value of i + j: 3
+Value of 2 * i + j - k: 1
+
+(b) the output of this program when #define is removed from testdebug.c
+
+Output if DEBUG is not defined:
+
+(c)
+In option (a), since the macro #define DEBUG is present, the conditional macro #ifdef DEBUG evaluates to true. As a result, the statement belonging to it—"Output if DEBUG is defined:"—is executed. Concurrently, #ifdef DEBUG in debug.h also evaluates to true, which defines PRINT_DEBUG(n) as a printf statement. Consequently, all PRINT_DEBUG(...) calls in testdebug.c are expanded and executed accordingly.
+
+On the other hand, in option (b), where #define DEBUG is removed, the #else branch is triggered in both testdebug.c and debug.h. In debug.h, PRINT_DEBUG(n) is defined as an empty macro. Therefore, all PRINT_DEBUG(...) calls in testdebug.c are replaced with nothing, leading to the respective output.
+
+(d)
+    Yes. The PRINT_DEBUG macro's definition relies on the definition of DEBUG. If DEBUG is defined AFTER PRINT_DEBUG is defined, it will have undesirable outcome.
