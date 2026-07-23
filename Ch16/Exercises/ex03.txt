@@ -1,0 +1,26 @@
+(a)
+    struct complex {
+        double real;
+        double imaginary;
+    };
+(b)
+    struct complex c1, c2, c3;
+
+(c)
+    struct complex make_complex(double real, double complex){
+        struct complex c;
+
+        c.real = real;
+        c.imaginary = imaginary;
+
+        return c;
+    }
+(d)
+    struct complex add_complex(double real, double complex){
+        struct complex c1;
+
+        c1.real += real;
+        c1.imaginary += imaginary;
+
+        returb=n c1;
+    }

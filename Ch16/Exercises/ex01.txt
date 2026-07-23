@@ -1,0 +1,6 @@
+struct {int x, y; } x;
+struct {int x, y; } y;
+
+Both declarations can appear in same program. 
+Because each structure represents a new scope. That is, names declared within scope don't conflict with other names of variables. 
+

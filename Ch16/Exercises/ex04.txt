@@ -1,0 +1,25 @@
+(a) 
+    typedef struct {
+        double real;
+        double imaginary;
+    } Complex;
+(b) Complex c1, c2, c3;
+
+(c) 
+    Complex make_complex(double real, double imaginary){
+        Complex c2;
+
+        c2.real = real;
+        c2.imaginary = imaginary;
+        
+        return  c2;
+    }
+(d)
+    Complex add_complex(double real, double imaginary){
+        Comlex c3;
+
+        c3.real += real;
+        c3.imaginary += imaginary
+
+        return Comlex;
+    }

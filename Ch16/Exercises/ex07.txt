@@ -1,0 +1,63 @@
+(a)
+    struct fraction reduce_fraction(struct fraction f){
+        int temp;
+        int n = f.numerator;
+        int d = f.denominator;
+
+        while(n % d != 0){
+            temp = d;
+            d = n % d;
+            n = temp;
+        }
+
+        f.numerator /= d;
+        f.denominator /= d;
+
+        return f;
+    }
+(b)
+    struct fraction add_fraction(struct fraction f1, struct fraction f2){
+        struct fraction result;
+
+        result.numerator = f1.denominator * f2.numerator + f2.denominator * f1.numerator;
+        result.denominator = f1.denominator * f2.denominator;
+
+        result = reduce_fraction(result);
+
+        return result;
+    }
+(c)
+    struct fraction subtract_fraction(struct fraction f1, struct fraction f2){
+        struct fraction result;
+        
+        result.numerator = f2.denominator * f1.numerator - f1.denominator * f2.numerator;
+        result.denominator = f1.denominator * f2.denominator;
+
+        result = reduce_fraction(result);
+
+        return result;
+    }
+
+(d)
+    struct fraction multiply_fraction(struct fraction f1, struct fraction f2){
+        struct fraction result;
+
+        result.numerator = f1.numerator * f2.numerator;
+        result.denominator = f1.denominator * f2.denominator;
+
+        result = reduce_fraction(result);
+
+        return result;
+    }
+
+(e)
+    struct fraction divide_fraction(struct fraction f1, struct fraction f2){
+        struct fraction result;
+
+        result.numerator = f1.numerator * f2.denominator;
+        result.denominator = f1.denominator * f2.numerator;
+
+        result = reduce_fraction(result);
+
+        return result;
+    }
