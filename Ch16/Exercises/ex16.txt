@@ -1,0 +1,6 @@
+option (a), (c), (e) is true.
+
+(b) enumeration constants looks simmilar with #define directive but there are several difference between them.
+    For one thing, enumeration constants subject to C's scope rule but #define directive isn't subject to C's scope rule. Wherever they appeared in file, they have file scope.
+
+(d) They, enumeration constants, can have same value.

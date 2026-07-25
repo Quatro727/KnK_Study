@@ -1,0 +1,30 @@
+(a)
+    double area(struct shape s){
+        if(shape_kind == CIRCLE){
+            return (double)(s.u.rectangle.height * s.u.rectangle.width);
+        }
+        else {
+            return ((double)(s.u.circle.radius * s.u.circle.radius) * 3.141592);
+        }
+    }
+(b) 
+    struct shape after_move(struct shape s, struct point move_value){
+        s.center.x += move_value.x;
+        s.center.y += move_value.y;
+        
+        return s;
+    }
+(c)
+    struct shape after_scale(struct shape s, double c){
+        if(shape_kind == CIRCLE){
+            s.u.circle.radius *= c
+        }
+        else {
+            s.u.rectangle.height *= c;
+            s.u.rectangle.width *= c;
+        }
+
+        return s;
+    }
+
+

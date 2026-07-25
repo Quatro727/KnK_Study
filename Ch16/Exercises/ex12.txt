@@ -1,0 +1,20 @@
+union {
+    double a;
+    struct {
+        char b[4];
+        double c;
+        int d;
+    } e;
+    char f[4];
+} u;
+
+
+the size of e will be 24bytes
+b = 8bytes = 4bytes for array + 4bytes for holes
+c = 8bytes
+d = 4bytes + 4bytes
+
+8bytes + 8bytes + 8bytes = 24bytes
+2
+
+so size of structure e is largest -> union type variable u will have 24bytes

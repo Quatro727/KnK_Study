@@ -1,0 +1,32 @@
+struct point {int x, y; };
+struct rectangle {struct point upper_left, low_rigt};
+
+(a)
+    int area_rectangle(struct rectangle r){
+        return ((r.lower_right.x - r.upper_left.x) * (r.upper_left.y - r.lower_right.y));
+    }
+(b)
+    struct point center_point(struct rectangle r){
+        struct point center;
+
+        center.x = (int)((r.upper_left.x + r.lower_right.x) / 2);
+        center.y = (int)((r.upper_left.y + r.lower_right.y) / 2);
+
+        return center;
+    }
+(c)
+    struct rectangle modified_rectangle(struct rectangle r, struct point move){
+        r.upper_left.x += move.x;
+        r.upper_left.y += move.y;
+
+        r.lower_right.x += move.x;
+        r.lower_right.y += move.y;
+
+        return r;
+    }
+(d)
+    bool is_p_within_rectangle(struct rectangle r, struct point p){
+        if((p.x > r.upper_left.x && p.x < r.lower_right.x) && (p.y > r.lower_right.y && p.y < r.upper_left.y)) 
+            return true;
+        return false;
+    }

@@ -1,0 +1,3 @@
+(a), (c), (d), (e) are legal statements.
+
+(b) i isn't initialized. So assign uninitialized variables to another one is illegal.

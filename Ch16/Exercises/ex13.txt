@@ -1,0 +1,17 @@
+struct shape {
+    int shape_kind;
+    struct point center;
+    union {
+        struct {
+            int height, width;
+        } rectangle;
+        struct {
+            int radius;
+        } circle;
+    } u;
+} s;
+
+option (c) need to be repaired: s.height -> s.u.rectangle.height
+option (e) need to be repaired: s.u.circle = 5 -> s.shape_kind = CIRCLE
+option (f) need to be repaired: s.u.radius = 5 -> s.u.circle.radius = 5
+

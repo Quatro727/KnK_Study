@@ -1,0 +1,19 @@
+struct {
+    double a;
+    union {
+        char b[4];
+        double c;
+        int d;
+    } e;
+    char f[4];
+}
+
+i) total size of variable e is 8 bytes
+ii) size of f is 4 bytes
+iii) compiler align the member of structure by leaving holes after the space of f is obtained.
+iv) max size of member of s is 8 bytes
+v) so the f's offset must be a multiple of 8 bytes so f will get a 4bytes of hole
+
+8bytes(double a) + 8bytes(union e) + 8bytes(f and holes) = 24bytes
+
+In concluison, total size of s is "24bytes"

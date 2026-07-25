@@ -1,0 +1,6 @@
+structure pinball_machine {
+    char name[40];
+    int year;
+    typedf enum {EM, SS} type;
+    int players;
+}
