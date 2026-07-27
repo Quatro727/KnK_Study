@@ -1,0 +1,19 @@
+enum {NORTH, SOUTH, EAST, WEST} direction
+
+switch(direction){
+    case EAST:
+        x += 1;
+        break;
+    case WEST:
+        x -= 1;
+        break;
+    case NORTH:
+        y += 1;
+        break;
+    case SOUTH:
+        y -= 1;
+        break;
+    default:
+        break;
+}
+
