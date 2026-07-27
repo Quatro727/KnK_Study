@@ -1,0 +1,15 @@
+char* duplicate(char* str){
+    char* p;
+    int i;
+
+    p = (char*)malloc(strlen(str) + 1);
+
+    if(p == NULL){
+        printf("Error: malloc failed.\n");
+        exit(EXIT_FAILURE);
+    }
+    
+    strcpy(p, str);
+
+    return p;
+}
