@@ -1,0 +1,10 @@
+int sum(int (*f)(int), int start, int end){
+    int total_sum = 0;
+
+    while(start <= end) {
+        total_sum += (*f)(start);
+        start++;
+    }
+
+    return total_sum;
+}

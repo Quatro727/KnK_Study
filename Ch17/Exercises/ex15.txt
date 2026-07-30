@@ -1,0 +1,11 @@
+THe output of this program is 
+
+Answer: 3
+
+i) In the main fuction, it called f1(f2).
+ii) f1 has the function pointer as a first parameter, and it points to a function f2.
+iii) In the body of f1 function, it called the function in the condition od while loop.
+iv) So, the while loop of f1 function will continue until the return of f2 become 0.
+v) And when n become 3, the return of f2 became 0.
+vi) Finally, f1 return 3.
+vii) As a result, the call of f1(f2) in main return 3. So it prints integer 3.

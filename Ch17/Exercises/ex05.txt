@@ -1,0 +1,14 @@
+struct {
+    union {
+        char a, b;
+        int c;
+    } d;
+    int e[5];
+} f, *p =&f;
+
+option (a) is illegal it must be corrected to 'p->d.b = ' ''
+option (d) is illegal statements. It must be corrected to 'p->d.c =20
+
+Consequently, option (b) and (c) are legal statements
+
+

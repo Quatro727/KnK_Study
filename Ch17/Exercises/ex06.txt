@@ -1,0 +1,13 @@
+struct node *delete_from_list(struct node *list, int n){
+    struct node **p = &list;
+
+    while(*p != NULL){
+        if((*p)->value == n) {
+            *p = (*p)->next;
+            break;
+        }
+        p = &(*p)->next;
+    }
+
+    return list;
+}

@@ -1,0 +1,9 @@
+i) '->' operator is used to pointer variable. It is combination of operator '*' and '.'.
+    so we can modify '(&x)->a' to '*(&x).a'
+ii) '*' operator means 'go to the memory address that variable represents'.
+    '*(&x)' is meaning 'go to the memory address that x is stored' 
+    so we can change it into just 'x'
+
+In conclusion,'(&x)->a' are same as 'x.a'.
+
+

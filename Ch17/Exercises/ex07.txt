@@ -1,0 +1,17 @@
+for(p = first; p != NULL; p = p->next)
+    free(p);
+
+In the body of for loop, calling free(p) is release the memoey that current node p is allocated
+And in the next loop, it executes expression 'p = p->next'.
+
+At this moment already released pointer p is attempting to access memeber next of p.
+Trying to access to released memory is causing undefined beahvior.
+
+We can correct it in this way.
+
+struct node *q;
+
+for(p = first; p != NULL; p = q){
+    q = p->next;
+    free(p);
+}

@@ -1,0 +1,20 @@
+void delete_from_list(struct node **list, int n){
+    struct node *cur, *prev;
+
+    for(cur = *list, prev = NULL; cur != NULL && cur->value != n; prev =cur, cur = cur->next)
+        ;
+    //n was not found
+    if(cur == NULL) {
+        printf("n isn't in the list\n");
+        return;
+
+    //n is in the first node
+    if(prev == NULL ) *list = (*list)->next;
+
+    //n is in some other node
+    else prev->next = cur->next;
+
+    free(cur);
+
+    return;
+}
