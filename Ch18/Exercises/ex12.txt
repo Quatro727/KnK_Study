@@ -1,0 +1,11 @@
+(a) int (*f(float (*)(long), char *))(double);
+    
+    f is 
+    i) function that takes two arguments, one is a pointer of function that takes one argument with long type and returns float type.
+    ii) returns a pointer
+    iii) pointer is points to a function that takes one argument with double type and returns a int type
+    
+    f is a function that takes two arguments, one is a pointer of function that takes one argument with long type and returns float type and the other is a pointer of char
+    , and then returns a pointer that points to a function that takes one argument with double type and returns a int type.
+
+(b) int (*fp)(double_number) = f(func_ptr, char_ptr);

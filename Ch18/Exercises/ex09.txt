@@ -1,0 +1,20 @@
+(a) char (*x[10])(int);
+
+    typedef  char (*FuncPtr)(int);
+    FuncPtr x[10];
+
+(b) int (*x(int))[5];
+    
+    typedef int (*ArrayPtr)[5];
+    ArrayPtr x(int);
+
+(c) float *(*x(void))(int);
+    
+    typedef float* FuncPtr(int);
+    typedef FuncPtr* FuncPtr_p;
+    FuncPtr_p x(void);
+
+(d) void (*x(int, void (*y)(int)))(int);
+    
+    typedef void (*FuncPtr)(int);
+    FuncPtr x(int, FuncPtr y);

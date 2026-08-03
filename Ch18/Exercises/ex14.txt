@@ -1,0 +1,3 @@
+Array variables, Enumeration variables, Structure variables, Union variables all can be initialized.
+
+So the answer is option (e).

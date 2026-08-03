@@ -1,0 +1,16 @@
+void print_error(const char *message){
+    int n = 1;
+    printf("Error %d: %s\n", n++, message);
+}
+
+The variable n needs to be declared 'static' to count the number of call of function.
+If n is declared in above, function will get new set of n which is initialized with 1 in every call of function.
+
+So we need to fix the function definition like this:
+
+void print_error(const char *message){
+    static int n = 1;
+    printf("Error%d: %s\n", n++, message);
+}
+
+The variable n will be initialized just once when the function is called in first.

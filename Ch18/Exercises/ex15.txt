@@ -1,0 +1,4 @@
+Option (a), the storage duration determines whether or not it has a default initial value.
+
+If the variable declared as auto, it's initial value is unpredictable.
+But if the variable declared as static, it's initial values is initialized with zero bits.

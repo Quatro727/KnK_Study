@@ -1,0 +1,19 @@
+extern float a;
+
+void f(register double b){
+    static int c;
+    auto char d;
+}
+
+i) variable a;
+    static stroage duratioin, file scope, extern linkage
+
+ii) register double b
+    automatice storage class, block scope, no linkage
+
+iii) static int c;
+    static storage class, block scope, no linkage
+
+iv) auto char d;
+    automatic storage class, block scope, no linkage
+    

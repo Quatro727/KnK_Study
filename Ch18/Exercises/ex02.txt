@@ -1,0 +1,8 @@
+(a) 'extern' storage class is used primarily to indicate that variable or function can be shared among files
+
+(b) 'static' storage class is used when we have to share among functions in one file, but hidden from other files.
+    but we have declared static outside the block.
+
+(c) 'static' storage class can affect the storage duration of a variable.
+
+

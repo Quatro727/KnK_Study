@@ -1,0 +1,36 @@
+(a) char (*x[10](int);
+    i) array that has 10 elements
+    ii) points to 
+    iii) function that has argument with int type and return type is char
+
+    x is a array that has 10 elements. Each element is points to a function which has one int type of argument and char type of return.
+
+(b) int (*x(int))[5];
+    
+    x is 
+    i) function with one int type of argument.
+    ii) returnning pointer to
+    iii) array which has 5 elements 
+    iv) element's type is integer
+
+    x is a function that gets a one int type of argument and returns pointer of a array which has 5  integer elements.
+
+(c) float *(*x(void))(int);
+    
+    x is
+    i) function that takes no argument.
+    ii) function returnning a pointer
+    iii) pointer of a function that takes an argument with int type and returns a pointer to float
+
+    x is a function that takes no argument and returns a pointer to function that takes a argumentwith int type and returns a float*.
+
+(d) void (*x(int, void (*y)(int)))(int);
+
+    x is 
+    i) function that takes two arguments, one is argument with int type and the other is pointer to a function which takes one argument with int type and then returns nothing.
+    ii) returns a pointer to
+    iii) function that takes an argument with int type and returns nothing.
+
+    x is a function that takes two arguments, one is argument with int type and the other is pointer to a function which takes one argument with int type and then returns nothing, and then returns pointer which points to a function that takes an int and returns void.
+
+

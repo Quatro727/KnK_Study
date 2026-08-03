@@ -1,0 +1,12 @@
+(a) Every variable with static storage duration has file scope: false
+    if variable with static storage duration is declared inside the block, it will have block scope.
+
+(b) Every variable declared inside a function has no linkage: false
+    If variable is declared like 'extern int n' inside block, it will have external linkage.
+    But if the variable is static earlier in the file, then it has internal linkage.
+
+(c) Every variable with internal linkage has static storage duration: true
+
+(d) Every parameter has block scope: true
+    Function parameter has same properites as auto variable: automatic storage duration, block scope and no linkage.
+    The only storage class that can be specified for parameters is 'register', which has block scope.

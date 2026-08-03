@@ -1,0 +1,4 @@
+x is declared 'const'.
+
+The option (a) is false. 
+In switch statement, only constant expression can be used as case lable. But the variable x which is declared 'const int x' is not constant.

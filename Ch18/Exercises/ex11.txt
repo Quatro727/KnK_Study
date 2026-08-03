@@ -1,0 +1,11 @@
+01) function that returns a pointer of array.
+    
+    int (*f(int))[10];
+
+02) function that returns a pointer of function
+
+    int (*g(int)(int);
+
+03) array elements are function pointer
+    
+    int (*a[10])(int)
