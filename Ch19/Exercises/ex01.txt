@@ -1,0 +1,14 @@
+#ifndef QUEUE_H
+#define QUEUE_H
+
+#include <stdbool.h>
+
+typedef struct queue_t *Queue;
+
+void queue_append(Queue, int i);
+void queue_remove_head(Queue);
+int queue_head(Queue);
+int queue_last(Queue);
+bool is_empty(Queue);
+
+#endif
