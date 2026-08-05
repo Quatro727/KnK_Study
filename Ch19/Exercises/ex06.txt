@@ -1,0 +1,26 @@
+(a) peek function in stackADT.c
+    
+    Item peek(Stack s){
+        if(is_empty(s)){
+            terminate("Error in peek: stack is empty.");
+        }
+        return s->contents[s->top];
+    }
+
+(b) peek function in stackADT2.c
+
+    Item peek(Stack s){
+        if(is_empty(s)){
+            terminate("Error in peek: stack is empty.");
+        }
+        return s->contents[s->top];
+    }
+
+(c) peek function in stackADT3.c
+
+    Item peek(Stack s){
+        if(si_empty(s)){
+            terminate("Error in peek: stack is empty.");
+        }
+        return s->top->data;
+    }
