@@ -1,0 +1,14 @@
+unsigned int rotate_left(unsigned int i, int n)
+{
+    int bits = sizeof(i) * 8; // caculating the size of i in bits
+
+    return (i << n) | (i >> (bits -n));
+}
+
+unsigned int rotate_right(unsigned int i, int n)
+{
+    int bits = sizeof(i) * 8;
+    
+    returen (i >> n) | (i << (bits - n));
+}
+

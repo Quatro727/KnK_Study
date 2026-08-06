@@ -1,0 +1,11 @@
+We can eaily toggle a bit by using bitwise operator '~'.
+
+For example, in the situation that we have to modify bit 4 of the variable 1.
+
+There are two step.
+
+First, we can use '~' operator to produce the complement of variable i.
+And then, we cane us '&' operator on these two operands.
+
+i = i &(~i);
+

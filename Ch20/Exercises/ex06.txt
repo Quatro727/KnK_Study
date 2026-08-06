@@ -1,0 +1,23 @@
+unsigned short swap_bytes(unsigned short i)
+{
+    unsigned short swap;
+
+    //store last 8bits of variable i to swap
+    swap = i & 0xff;
+    
+    //move 8bits to right
+    i >>= 8;
+
+    //shift swap's bits 8 places and thenadd swap's 8bits to i's first 8bits.
+    i = (swap << 8) | i;
+
+    return i;
+}
+
+(b) condense the function's body as a single statement.
+
+unsigned short swap_byte(unsigned short i)
+{
+    return (i >> 8 | i << 8);
+}
+    

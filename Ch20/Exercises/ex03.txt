@@ -1,0 +1,7 @@
+#define M(x, y) ((x) ^= (y), (y) ^= (x), (x) ^= (y))
+
+This macro is paramatized macro.
+
+When preprocessor meet this macro in the source file, it replaces M(x, y) to '((x) ^= (y), (y) ^= (x), (x) ^= (y)).
+
+Those are just a operation of bitwise on two opernads x, y.
