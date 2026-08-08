@@ -1,0 +1,10 @@
+unsigned int f(unsigned int i, int m, int n)
+{
+    return (i >> (m + 1 - n)) & ~(~0 << n);
+}
+(a) value of ~(~0 << n)
+    Assumping that int type is 32bits, this expression is making low n bits of 32bit to one, while the other (32 - n)bits are zero.
+
+(b) function's doing
+    
+    Extract n bits from position m in unsigned integer.

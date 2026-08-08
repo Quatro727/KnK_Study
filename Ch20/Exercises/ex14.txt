@@ -1,0 +1,6 @@
+struct float_point {
+    unsigned int fraction: 23;
+    unsigned int exp: 8;
+    unsigned int sign: 1;
+}
+This bit filed's alignment is based on GCC in x86_64.

@@ -1,0 +1,4 @@
+n &= n - 1;
+
+The statements is removing rightmost 1-bit in n.
+Each time the statement is executed, n's rightmost bit that is set to 1 is removed.

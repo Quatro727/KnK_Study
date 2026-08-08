@@ -1,0 +1,21 @@
+typedef unsigned char BYTE;
+typedef unsigned short WORD;
+typedef unsigned long DWORD;
+
+union {
+    struct {
+        DWORD eax, ebx, ecx, edx;
+    } dword;
+    struct {
+        WORD ax: 16; WORD : 16;
+        WORD bx: 16; WORD : 16;
+        WORD cx: 16; WORD : 16;
+        WORD dx: 16; WORD : 16;
+    } word;
+    struct  {
+        BYTE al, ah; WORD : 16;
+        BYTE bl, bh; WORD : 16;
+        BYTE cl, ch; WORD : 16;
+        BYTE dl, dh; WORD : 16;
+    } byte;
+} regs;

@@ -1,0 +1,14 @@
+Each of following macros defines the position of a single bit within an integer.
+#define SHIFT_BIT 1
+#define CTRL_BIT 2 
+#define ALT_BIT 4
+
+if(key_code & (SHIFT_BIT | CTRL_BIT | ALT_BIT) == 0)
+    printf("NO modifier keys pressed.\n");
+
+Above statements never diplays the specified message.
+Because the precedence of & is lower than relational operators,
+        which means the expression (SHIFT_BIT ...) == 0 is evaluated before than key_code & (SHIFT_...).
+
+So we can fix it by using parentheses.
+(key_code & (SHIFT_BIT | ... )) == 0

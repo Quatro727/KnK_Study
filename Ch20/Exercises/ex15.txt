@@ -1,0 +1,13 @@
+struct {
+    int flag: 1;
+} s;
+
+(a) Above structure's member, we didn't declare it as unsigned int.
+If we don't declare it as a unsigned bit, some compilers would misunderstand this bit as s sign bit.
+
+(b) If we want to fix this to have a consistent value, we need to add a type specifier 'unsigned'
+
+struct {
+    unsigned int flag: 1;
+} s;
+
