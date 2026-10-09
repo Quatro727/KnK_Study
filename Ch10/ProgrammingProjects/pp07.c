@@ -29,10 +29,10 @@ const int segments[10][7] = {{1, 1, 1, 1, 1, 1, 0},
 char digits[4][MAX_DIGITS * 4];
 
 /* translating the 7-segments display to a 3x3 grid:
- * 0 1 2
- * 0  _
- * 1 |_|
- * 2 |_|
+ *   0  1  2
+ * 0    _
+ * 1 |  _  |
+ * 2 |  _  |
  */
 const int segment_grid[7][2] = {{0, 1},
                                 {1, 2},
@@ -61,6 +61,7 @@ int main(void)
     return 0;
 }
 
+//store blank characters into all elements of the digits array
 void clear_digits_array(void)
 {
     int i,j;
@@ -72,19 +73,21 @@ void clear_digits_array(void)
     }
 }
 
+//store the seven-segment representation of digit into a specified position in the digit array
 void process_digit(int digit, int position)
 {
     int i, row, col;
 
-    for (i = 0; i <7; i++) {
-        if(segments[digit][i]) {
-        row = segment_grid[i][0];
-        col = segment_grid[i][1] + position;
-        digits[row][col] = (i % 3 == 0 ? '_' : '|');
+    for (i = 0; i < 7; i++) {
+        if (segments[digit][i]) {
+            row = segment_grid[i][0];
+            col = segment_grid[i][1] + position;
+            digits[row][col] = (i % 3 == 0 ? '_' : '|');
         }
     }
 }
 
+//display the rows of the digits array
 void print_digits_array(void)
 {
     int i, j;
