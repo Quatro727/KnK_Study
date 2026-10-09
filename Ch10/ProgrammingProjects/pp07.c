@@ -82,6 +82,7 @@ void process_digit(int digit, int position)
         if (segments[digit][i]) {
             row = segment_grid[i][0];
             col = segment_grid[i][1] + position;
+            //if i is 0, 3, or 6 -> '_' if i is th others(1, 2, 4, 5) -> '|'
             digits[row][col] = (i % 3 == 0 ? '_' : '|');
         }
     }
