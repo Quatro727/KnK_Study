@@ -38,7 +38,7 @@ int main(void)
          * if it's larger than 24 or lesser than 0, sned error message and ignore it
         */
         scanf("%s", time_str);
-        if (time_str[0] > '2' || (time_str[0] == '2' && time_str[1] > '4')) {
+        if (time_str[0] > '2' || (time_str[0] == '2' && time_str[1] > '4') || time_str[3] > 5) {
                 printf("Invalid time...\n");
 
                 while (getchar() != '\n');
